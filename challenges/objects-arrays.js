@@ -100,7 +100,14 @@ console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 const unisWithUni = [];
-
+// graduates.map(function(uniStr){
+//   return universities.push(uniStr.university);
+// }); *****With out this commented out, it returned repeats. I don't know why I was getting repeats.*******
+for(let i = 0; i < universities.length; i++){
+  if(universities[i].includes('Uni')){
+    unisWithUni.push(universities[i]);
+  }
+}
 
 console.log(unisWithUni);
 
